@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download certificates for Mr. Stephen Marara Ndichu, including Able Seafarer Deck and Basic Safety Training.">
+    <meta name="keywords" content="Certificates, Able Seafarer Deck, Basic Safety Training, ASTG Certificates">
+    <meta name="author" content="ASTG">
+    <title>Stephen Marara Ndichu | Certificate Portal</title>
+    <!-- Social Media Preview -->
+    <meta property="og:title" content="Stephen Marara Ndichu | Certificate Portal">
+    <meta property="og:description" content="Easily download all your certificates, including Able Seafarer Deck and Basic Safety Training.">
+    <meta property="og:image" content="astg-stephen_photo-nobg.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/certificates">
+    <title>Seafarer Certificate Verification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      body {
+        font-family: Arial Rounded, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+      }
+
+      header img {
+        height: 40px;
+      }
+
+      nav {
+        display: none;
+        /* Initially hidden on smaller screens */
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 10;
+        /* Ensure it's above other content */
+      }
+
+      nav a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+
+      nav a:hover,
+      nav a.active {
+        background-color: #f1f1f1;
+        color: #3c95ab;
+      }
+
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      .hamburger div {
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+      }
+
+      .show-nav nav {
+        display: flex !important;
+      }
+
+      @media (min-width: 768px) {
+        nav {
+          display: flex !important;
+          position: static;
+          flex-direction: row;
+          box-shadow: none;
+        }
+
+        .hamburger {
+          display: none;
+        }
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .certificates {
+        text-align: left;
+      }
+
+      .container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .container p {
+        color: #555;
+        text-align: left;
+      }
+
+      .search-box {
+        margin-top: 20px;
+      }
+
+      .search-box input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .search-box button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .search-box button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer .columns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer .column {
+        flex: 1;
+        margin: 10px;
+        text-align: left;
+        /* Align text to the left in footer columns */
+      }
+
+      footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-info {
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        /* Stack on smaller screens */
+        align-items: center;
+        /* Center horizontally */
+        gap: 10px;
+        /* Reduced gap for mobile */
+        font-family: Arial Rounded, sans-serif;
+        margin-top: 20px;
+        /* Added margin for spacing */
+      }
+
+      @media (min-width: 768px) {
+        .contact-info {
+          flex-direction: row;
+          /* Row on larger screens */
+          gap: 20px;
+        }
+      }
+
+      .contact-info a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .contact-info a:hover {
+        color: #56b2ba;
+      }
+
+      .div-1 {
+        background-color: #EBEBEB;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .div-1 h2 {
+        margin-bottom: 10px;
+      }
+
+      #certificates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      @media (min-width: 768px) {
+        #certificates {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+
+      #certificates img {
+        max-width: 200px;
+        height: auto;
+      }
+
+      table {
+        width: 100%;
+        /* Make table responsive */
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      .socialmedia {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .socialmedia li {
+        margin-right: 10px;
+      }
+
+      .socialmedia a {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.2em;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      .socialmedia i {
+        color: white;
+      }
+
+      .socialmedia li:hover a {
+        transform: scale(1.1);
+      }
+    </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector('header');
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener('click', () => {
+          header.classList.toggle('show-nav');
+        });
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            header.classList.remove('show-nav');
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const certificateModal = document.getElementById('certificateModal');
+  const modalImage = document.getElementById('certificateImage');
+
+  // Clear the image source when the modal is hidden
+  certificateModal.addEventListener('hidden.bs.modal', () => {
+    modalImage.src = ''; // Clear the image source
+  });
+
+  // Add click event listeners to all 'View' buttons
+  document.querySelectorAll('.btn-primary').forEach(button => {
+    button.addEventListener('click', event => {
+      const certificatePath = event.target.getAttribute('data-certificate');
+      modalImage.src = certificatePath; // Set the image source to the selected certificate
+    });
+  });
+});
+
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="https://astg.co.za/wp-content/uploads/2023/11/ASTG-scaled2.png" alt="ASTG Logo">
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="navMenu">
+        <a href="https://astg.co.za/" class="active">Home</a>
+        <a href="https://astg.co.za/courses/">Courses</a>
+        <a href="https://astg.co.za/contact/">Contact</a>
+        <a href="#">Verification</a>
+        <a href="#" style="background-color: #e74c3c; color: white; padding: 5px 10px; border-radius: 4px;">Login</a>
+      </nav>
+    </header>
+    <div></div>
+    <style>
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <div class="div-1">
+      <h2>SEAFARER CERTIFICATE VERIFICATION</h2>
+      <p>
+        <a href="https://astg.co.za/" style="text-decoration:none">Home</a> / SEAFARER CERTIFICATE VERIFICATION
+      </p>
+      <style>
+        h1 {
+          text-align: center;
+        }
+
+        div-1 {
+          height: 200px;
+          width: 100%;
+        }
+      </style>
+    </div>
+    
+      <!-- certificate div  -->
+     <div class="container>
+
+     
+      <div class="certificates">
+
+      <div class="table-responsive">
+  <table class="table table-bordered">
+    <!-- Table content -->
+     <section id="certificates" class="mt-5" style="display: flex; align-items: center; gap: 20px;">
+          <p style="flex: 1;">This certifies that <b> Mr. Stephen Marara Ndichu </b> has successfully completed and received the following certificates from ASTG </p>
+          <img src="astg-stephen_photo-nobg.png" alt="Mr. Stephen Marara Ndichu" width="200" height="250" style="border-radius: 8px;">
+        </section>
+        <h2 class="mb-4 text-center">Certificates Of Proficiency (COP)</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Certificate Name</th>
+              <th>Issue Date</th>
+              <th>Expiry Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ABLE SEAFARER DECK</td>
+              <td>DECEMBER 2023</td>
+              <td>NO EXPIRY</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="ABLE SEAFARER DECK-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>BASIC SAFETY TRAINING</td>
+              <td>DECEMBER 2023</td>
+              <td>NO EXPIRY</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="BASIC SAFETY TRAINING-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>BASIC TRAINING FOR OIL AND CHEMICAL TANKER CARGO</td>
+              <td>DECEMBER 2023</td>
+              <td>NO EXPIRY</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="BASIC TRAINING FOR OIL AND CHEMICAL TANKER CARGO-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>DESIGNATED SECURITY DUTIES</td>
+              <td>DECEMBER 2023</td>
+              <td>NO EXPIRY</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="DESIGNATED SECURITY DUTIES-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ELEMENTARY FIRST AID</td>
+              <td>DECEMBER 2023</td>
+              <td>4th DECEMBER 2028</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="ELEMENTARY FIRST AID-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>FIRE PREVENTION AND FIRE FIGHTING</td>
+              <td>DECEMBER 2023</td>
+              <td>4th DECEMBER 2028</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="FIRE PREVENTION AND FIRE FIGHTING-stephen.jpg">View</button>
+              </td>
+            </tr>
+            <td>7</td>
+              <td>HYDROGEN SULPHIDE SAFETY(H2S)</td>
+              <td>DECEMBER 2023</td>
+              <td>NO EXPIRY</td>
+              <td>
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="HYDROGEN SULPHIDE SAFETY(H2S)-stephen.jpg">View</button>
+              </td>
+              <tr>
+                <td>8</td>
+                <td>PERSONAL SAFETY AND SOCIAL RESPONSIBILITIES</td>
+                <td>DECEMBER 2023</td>
+                <td>4th DECEMBER 2028</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="PERSONAL SAFETY AND SOCIAL RESPONSIBILITIES-stephen.jpg">View</button>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>PERSONAL SURVIVAL TECHNIQUES</td>
+                <td>DECEMBER 2023</td>
+                <td>NO EXPIRY</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="PERSONAL SURVIVAL TECHNIQUES-stephen.jpg">View</button>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>PROFICIENCY IN SURVIVAL CRAFT AND RESCUE BOATS</td>
+                <td>DECEMBER 2023</td>
+                <td>4th DECEMBER 2028</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="PROFICIENCY IN SURVIVAL CRAFT AND RESCUE BOATS-stephen.jpg">View</button>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>SECURITY AWARENESS TRAINING</td>
+                <td>DECEMBER 2023</td>
+                <td>NO EXPIRY</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="SECURITY AWARENESS TRAINING-stephen.jpg">View</button>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>RATING FORMING PART OF NAVIGATIONAL WATCH</td>
+                <td>DECEMBER 2023</td>
+                <td>NO EXPIRY</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#certificateModal" data-certificate="RATING FORMING PART OF NAVIGATIONAL WATCH-stephen.jpg">View</button>
+                </td>
+              </tr>  
+            </tr>
+            <!-- Add similar rows for other certificates -->
+          </tbody>
+        </table>
+      </div> 
+    
+  </table>
+</div>
+
+        <!-- Add a button for downloading all certificates -->
+        <div class="text-center mt-4">
+          <button id="downloadButton" class="btn btn-success">Download All Certificates</button>
+          <span id="loadingText" style="display: none; margin-left: 10px; color: green;">Downloading...</span>
+      </div>
+      
+        
+        <script>
+         document.getElementById('downloadButton').addEventListener('click', () => {
+    const files = [
+        'certificates.zip'
+            ];
+    document.getElementById('loadingText').style.display = 'inline';
+
+    files.forEach((file, index) => {
+        setTimeout(() => {
+            const link = document.createElement('a');
+            link.href = file;
+            link.download = file.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // Hide loading text after last download
+            if (index === files.length - 1) {
+                setTimeout(() => {
+                    document.getElementById('loadingText').style.display = 'none';
+                }, 2000);
+            }
+        }, index * 1000);
+    });
+});
+
+        </script>
+        
+    <!-- Modal -->
+<div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl"> <!-- Use modal-xl for larger modal -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="certificateModalLabel">Certificate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center"> <!-- Center the image -->
+        <img 
+          id="certificateImage" 
+          src="" 
+          alt="Certificate" 
+          style="width: 100%; max-height: calc(100vh - 200px); object-fit: contain; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="contact-info">
+      <p>If you have any queries, please contact our Personnel Certification team</p>
+      <a href="tel:+15642247328">Phone: +1-564-224-7328</a>
+      <a href="tel:+15645445734">Phone: +1-564-544-5734</a>
+      <a href="mailto:info@astg.co.za">Email: info@astg.co.za</a>
+    </div>
+    <style>
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Horizontally center */
+        justify-content: center;
+        /* Vertically center */
+        text-align: center;
+        /* Center align text */
+        padding: 20px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        /* Optional background color for better visibility */
+        border-radius: 8px;
+        /* Optional styling */
+        max-width: 400px;
+        /* Limit the width for better design */
+      }
+
+      .contact-info p {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .contact-info a {
+        display: block;
+        /* Ensures each link appears on a new line */
+        margin-bottom: 8px;
+        color: #007BFF;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <footer>
+      <div class="columns">
+        <div class="column">
+          <h1>ASTG</h1>
+          <p>Our mission is to provide high-quality services to mariners across the globe. We aim to improve the lives of mariners through education and training, both at home and at sea.</p>
+          <ul class="socialmedia">
+            <li style="--1:#1b51e7; --j:#4952cc;">
+              <span class="icon">
+                <i class="fa fa-facebook"></i>
+              </span>
+              <span class="titulo"></span>
+            </li>
+            <li style="--1:#051c24;--j:#012f2d;">
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <span class="titulo"></span>
+            </li>
+            <li style="--1:#d4ed1a;--j:#ff9151;">
+              <span class="icon">
+                <i class="fa fa-linkedin"></i>
+                </i>
+              </span>
+              <span class="titulo"></span>
+            </li>
+            <li style="--1:#f2565e;--j:#ff518e;">
+              <span class="icon">
+                <i class="fa fa-instagram"></i>
+                </i>
+              </span>
+              <span class="titulo"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Explore</h3>
+          <ul style="list-style-type:square;">
+            <li>
+              <a href="#">Home</a>
+              <br>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+              <br>
+            </li>
+            <li>
+              <a href="#">Courses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Resources</h3>
+          <ul style="list-style-type:square;">
+            <li>
+              <a href="#">Courses</a>
+              <br>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+              <br> </li>
+            <li>
+              <a href="#">Profile</a>
+              <br>
+            </li>
+            <li>
+              <a href="#">Private Message</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy; 2025 African Seafarers Training Group</p>
+    </footer>
+    <script>
+      // JavaScript to toggle the navigation menu
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('navMenu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show-nav');
+      });
+      // Close menu if user clicks outside the nav or hamburger
+      document.addEventListener('click', (event) => {
+        if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+          navMenu.classList.remove('show-nav');
+        }
+      });
+    </script>
+  </body>
+</html>
